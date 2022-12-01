@@ -23,6 +23,8 @@ The project contains the following test cases from saucedemo web page:
 2. Install dependencies
 ```
 npm i
+
+npx playwright install
 ```
 3. Run the following command to execute the test cases and see the visual reporter the tests.
 ```
