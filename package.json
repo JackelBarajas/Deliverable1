@@ -1,0 +1,25 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "show-report" : "npx playwright show-report",
+    "smoke" : "playwright test --grep=smoke --headed --project=chromium && npm run show-report",
+    "login" : "playwright test --grep=success_Login --headed --project=chromium ",
+    "logout": "playwright test --grep=success_logout --headed --project=chromium ",
+    "failedLogin" : "playwright test --grep=failedLogin --headed --project=chromium ",
+    "chooseProduct": "playwright test --grep=chooseProduct --headed --project=chromium ",
+    "pageDetails": "playwright test --grep=pageDetails --headed --project=chromium "
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
